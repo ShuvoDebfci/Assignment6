@@ -1,11 +1,4 @@
-import 'package:flutter/material.dart';
-
-void main() {
-  runApp(MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  @override
+ @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
@@ -26,24 +19,47 @@ class HomeScreen extends StatelessWidget {
       body: Column(
         children: [
           ListTile(
-            leading: Icon(Icons.shopping_basket_outlined),
-            title: Text('Apples'),
+            leading: Icon(Icons.shopping_basket),
+            title: Text(
+              'Apples',
+              style:
+                  TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
+            ),
           ),
           ListTile(
-            leading: Icon(Icons.shopping_basket_outlined),
-            title: Text('Bananas'),
+            leading: Icon(Icons.shopping_basket),
+            title: Text('Bananas',
+                style: TextStyle(
+                    color: Colors.black, fontWeight: FontWeight.bold)),
           ),
           ListTile(
-            leading: Icon(Icons.shopping_basket_outlined),
-            title: Text('Milk'),
+            leading: Icon(Icons.shopping_basket),
+            title: Text(
+              'Milk',
+              style:
+                  TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
+            ),
           ),
           ListTile(
-            leading: Icon(Icons.shopping_basket_outlined),
-            title: Text('Bread'),
+            leading: Icon(Icons.shopping_basket),
+            title: Text(
+              'Bread',
+              style:
+                  TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
+            ),
           ),
           ListTile(
-            leading: Icon(Icons.shopping_basket_outlined),
-            title: Text('Eggs'),
+            leading: Icon(
+              Icons.shopping_basket,
+              weight: 10,
+            ),
+            title: Text(
+              'Eggs',
+              style: TextStyle(
+                color: Colors.black,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
           ),
         ],
       ),
